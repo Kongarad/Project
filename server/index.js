@@ -144,7 +144,7 @@ app.post('/api/payment/upload-slip', upload.single('file'), async (req, res) => 
     const form = new FormData();
     form.append('files', req.file.buffer, { filename: req.file.originalname });
     form.append('amount', amount);
-    //form.append('log', 'true');
+    form.append('log', 'true');
 
     const response = await axios.post(
       `https://api.slipok.com/api/line/apikey/${branchId}`,
