@@ -1,5 +1,5 @@
 # ระบบจองสนามฟุตบอล
-
+Use the package manager node.js to install nodejs and vite.js to install vite.js
 ## วิธีติดตั้งโปรแกรม
 1. git clone
 2. cd server
